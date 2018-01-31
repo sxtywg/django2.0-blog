@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>稿件列表</h1>
+{% for article in articles %}
+    <a href="/blog/article/{{ article.id }}">{{ article.title }}</a>
+    <br>
+{% endfor %}
+
+<h2><a href="/blog/article/add_page">新增稿件</a></h2>
+</body>
+</html>
